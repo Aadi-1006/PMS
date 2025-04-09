@@ -1,0 +1,25 @@
+uuid: d95dac6f-4d3c-42b4-98d2-80d381788401
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dashboard_component.field_dashboard_field
+    - paragraphs.paragraphs_type.dashboard_component
+  module:
+    - link
+id: paragraph.dashboard_component.default
+targetEntityType: paragraph
+bundle: dashboard_component
+mode: default
+content:
+  field_dashboard_field:
+    type: link_default
+    weight: 0
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
