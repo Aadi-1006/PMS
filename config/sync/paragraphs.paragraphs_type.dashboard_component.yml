@@ -1,0 +1,10 @@
+uuid: 6a57086d-d096-4489-bf95-09d8011c1f7e
+langcode: en
+status: true
+dependencies: {  }
+id: dashboard_component
+label: 'Dashboard Component '
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -4,31 +4,19 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.dashboard.body
-    - field.field.node.dashboard.field_demo_field
-    - field.field.node.dashboard.field_demo_field_2
+    - field.field.node.dashboard.field_dashboard_component
     - node.type.dashboard
   module:
-    - text
     - user
 id: node.dashboard.teaser
 targetEntityType: node
 bundle: dashboard
 mode: teaser
 content:
-  body:
-    type: text_summary_or_trimmed
-    label: hidden
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    weight: 101
-    region: content
   links:
     settings: {  }
     third_party_settings: {  }
     weight: 100
     region: content
 hidden:
-  field_demo_field: true
-  field_demo_field_2: true
+  field_dashboard_component: true

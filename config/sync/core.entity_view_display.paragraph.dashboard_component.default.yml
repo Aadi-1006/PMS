@@ -1,0 +1,27 @@
+uuid: 56d78fb4-3f2f-4f8a-9226-d11caff1450c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dashboard_component.field_dashboard_field
+    - paragraphs.paragraphs_type.dashboard_component
+  module:
+    - link
+id: paragraph.dashboard_component.default
+targetEntityType: paragraph
+bundle: dashboard_component
+mode: default
+content:
+  field_dashboard_field:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

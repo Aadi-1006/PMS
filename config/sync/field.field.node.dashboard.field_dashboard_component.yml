@@ -1,0 +1,31 @@
+uuid: 876f6952-87bb-42b8-9694-74fdfb4453eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dashboard_component
+    - node.type.dashboard
+    - paragraphs.paragraphs_type.dashboard_component
+  module:
+    - entity_reference_revisions
+id: node.dashboard.field_dashboard_component
+field_name: field_dashboard_component
+entity_type: node
+bundle: dashboard
+label: 'Dashboard Component '
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      dashboard_component: dashboard_component
+    negate: 0
+    target_bundles_drag_drop:
+      dashboard_component:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions
